@@ -1,0 +1,43 @@
+.dropIndicator {
+  position: absolute;
+  z-index: 10;
+  background-color: #1d4ed8;
+  pointer-events: none;
+  box-sizing: border-box;
+
+  height: var(--line-thickness);
+  left: var(--terminal-radius);
+  right: 0;
+}
+
+/* Terminal */
+.dropIndicator::before {
+  content: "";
+  width: var(--terminal-size);
+  height: var(--terminal-size);
+  box-sizing: border-box;
+  position: absolute;
+  border-width: var(--line-thickness);
+  border-style: solid;
+  border-color: #1d4ed8;
+  border-radius: 50%;
+
+  left: var(--negative-terminal-size);
+}
+
+/* Edge Styles */
+.top {
+  top: var(--line-offset);
+}
+
+.top::before {
+  top: var(--offset-terminal);
+}
+
+.bottom {
+  bottom: var(--line-offset);
+}
+
+.bottom::before {
+  bottom: var(--offset-terminal);
+}
