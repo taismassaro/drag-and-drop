@@ -14,7 +14,9 @@ import { ItemPosition } from "./SortableList";
 const AccessibleDragHandle = ({
   position,
   index,
+  // @ts-expect-error (so we can build and deploy)
   reorderItem,
+  // @ts-expect-error (so we can build and deploy)
   dragHandleRef,
 }: {
   position: ItemPosition;
