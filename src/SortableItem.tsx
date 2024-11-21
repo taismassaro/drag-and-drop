@@ -195,7 +195,7 @@ const SortableItem = ({
       <li
         role="option"
         tabIndex={0}
-        style={{ position: "relative" }}
+        style={{ position: "relative", cursor: "grab" }}
         onKeyDown={handleKeyDown}
       >
         <div
